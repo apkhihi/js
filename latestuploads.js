@@ -59,8 +59,13 @@ function recent_post_style(){
     document.write(s);
 }
 function recent_post_content(){
-    var s = "<div id='recent_post'>";
+    var s = "<div id='recent_post' title='Latest Uploads'>";
     if(info_text){
+    s += "<div class='wrapper'>";
+    s += "<div class='newstitle'>";
+    s += "";
+    s += "</div>";
+    }
     s += "  <marquee style='float:left; margin-left:10px; width:82%' scrollAmount='"+scrolling_speed+"'>";
     for(var i=0; i<latest_post; i++){
         var recent_post_entries = entries[i];
